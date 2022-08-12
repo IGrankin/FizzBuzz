@@ -31,6 +31,10 @@ class FizzBuzzTests: XCTestCase {
 
 class FizzBuzz {
     func fizzBuzz(_ int: Int) -> String {
-        return ""
+        if int == 0 {
+            return ""
+        } else {
+            return "\(int)"
+        }
     }
 }
