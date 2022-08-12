@@ -46,5 +46,10 @@ class FizzBuzzTests: XCTestCase {
         let result = sut.fizzBuzz(10)
         XCTAssertEqual(result, "Buzz")
     }
+    
+    func test_15ReturnsFizzBuzz() {
+        let result = sut.fizzBuzz(15)
+        XCTAssertEqual(result, "FizzBuzz")
+    }
 
 }
