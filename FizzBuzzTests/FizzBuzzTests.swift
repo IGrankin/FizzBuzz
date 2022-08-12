@@ -21,6 +21,11 @@ class FizzBuzzTests: XCTestCase {
         let result = sut.fizzBuzz(0)
         XCTAssertEqual(result, "")
     }
+    
+    func test_oneReturnsOneAsString() {
+        let result = sut.fizzBuzz(1)
+        XCTAssertEqual(result, "1")
+    }
 
 }
 
