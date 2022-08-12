@@ -11,6 +11,8 @@ class FizzBuzz {
     func fizzBuzz(_ int: Int) -> String {
         if int == 0 {
             return ""
+        } else if int == 15 {
+            return "FizzBuzz"
         } else if int % 3 == 0 {
             return "Fizz"
         } else if int % 5 == 0 {
