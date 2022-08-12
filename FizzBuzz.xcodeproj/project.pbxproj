@@ -10,6 +10,7 @@
 		6D4536BA28A62B9400DB0527 /* FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4536B128A62B9300DB0527 /* FizzBuzz.framework */; };
 		6D4536BF28A62B9400DB0527 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4536BE28A62B9400DB0527 /* FizzBuzzTests.swift */; };
 		6D4536C028A62B9400DB0527 /* FizzBuzz.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4536B428A62B9300DB0527 /* FizzBuzz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D4536CA28A62DB100DB0527 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4536C928A62DB100DB0527 /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		6D4536B428A62B9300DB0527 /* FizzBuzz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		6D4536B928A62B9400DB0527 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4536BE28A62B9400DB0527 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
+		6D4536C928A62DB100DB0527 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				6D4536B428A62B9300DB0527 /* FizzBuzz.h */,
+				6D4536C928A62DB100DB0527 /* FizzBuzz.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					6D4536B028A62B9300DB0527 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					6D4536B828A62B9400DB0527 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4536CA28A62DB100DB0527 /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +340,7 @@
 		6D4536C428A62B9400DB0527 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +370,7 @@
 		6D4536C528A62B9400DB0527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -391,6 +399,7 @@
 		6D4536C728A62B9400DB0527 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VK395NXJ86;
@@ -406,6 +415,7 @@
 		6D4536C828A62B9400DB0527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VK395NXJ86;
