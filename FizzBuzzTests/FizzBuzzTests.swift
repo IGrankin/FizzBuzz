@@ -56,5 +56,16 @@ class FizzBuzzTests: XCTestCase {
         let result = sut.fizzBuzz(30)
         XCTAssertEqual(result, "FizzBuzz")
     }
+    
+    func test_1from100() {
+        var result = ""
+        for int in 1...100 {
+            result.append(contentsOf: "\(sut.fizzBuzz(int))")
+            if int != 100 {
+                result.append(contentsOf: "\n")
+            }
+        }
+        XCTAssertEqual(result, fizzBuzzFrom1To100)
+    }
 
 }
