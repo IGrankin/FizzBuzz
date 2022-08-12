@@ -11,8 +11,14 @@ import XCTest
 class FizzBuzzTests: XCTestCase {
 
     func test_zeroReturnsEmptyString() {
-        let result = sut.fizzBuzz()
+        let result = FizzBuzz().fizzBuzz(0)
         XCTAssertEqual(result, "")
     }
 
+}
+
+class FizzBuzz {
+    func fizzBuzz(_ int: Int) -> String {
+        return ""
+    }
 }
