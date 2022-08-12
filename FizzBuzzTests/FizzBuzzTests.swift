@@ -9,9 +9,16 @@ import XCTest
 @testable import FizzBuzz
 
 class FizzBuzzTests: XCTestCase {
+    
+    var sut: FizzBuzz!
+    
+    override func setUp() {
+        super.setUp()
+        sut = FizzBuzz()
+    }
 
     func test_zeroReturnsEmptyString() {
-        let result = FizzBuzz().fizzBuzz(0)
+        let result = sut.fizzBuzz(0)
         XCTAssertEqual(result, "")
     }
 
