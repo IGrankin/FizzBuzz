@@ -13,7 +13,7 @@ class FizzBuzz {
             return ""
         } else if int % 3 == 0 {
             return "Fizz"
-        } else if int == 5 {
+        } else if int % 5 == 0 {
             return "Buzz"
         } else {
             return "\(int)"
